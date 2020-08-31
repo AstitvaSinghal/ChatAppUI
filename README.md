@@ -8,7 +8,7 @@ This is a React Application to create a basic Chat UI.It has following features:
 . use of Redux to store the conversations and faker to produce the chats
 . works well with medium and large screen devices
 
-The Application is hosted on https://hablar-5daaf.web.app/
+The Application is hosted on https://hablar-5daaf.web.app/ (firebase url)
 
 To run the project:-
 . Clone the repository
