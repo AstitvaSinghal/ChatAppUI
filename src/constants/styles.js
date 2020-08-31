@@ -20,7 +20,7 @@ export default {
   fontBold: {
     fontWeight: "bold",
   },
-
+  text_color: "rgb(230, 230, 230)",
   /* Border, Margin, Padding, Flex */
 
   ...[0, 1, 2, 3, 4, 5].reduce(
