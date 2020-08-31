@@ -1,0 +1,53 @@
+#Header-card {
+  height: 12%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0;
+  border-color: grey;
+}
+
+#image-container {
+  height: 100%;
+  width: 10%;
+  align-items: center;
+  display: flex;
+}
+
+#contact-image {
+  width: 7vh;
+  height: 7vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+#text-upper-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+#name-holder {
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+
+#status {
+  font-size: 2vh;
+}
+
+#image-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  padding: 5px;
+  /*border: 1px solid black;*/
+  margin-left: auto;
+  margin-right: 10px;
+}

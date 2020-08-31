@@ -7,6 +7,7 @@ import { Color_Theme } from "../../../constants/colors";
 import { connect } from "react-redux";
 import { addMessage } from "../../../actions";
 import { image } from "faker";
+import "./index.css";
 class MessageInput extends Component {
   constructor(props) {
     super(props);
@@ -20,7 +21,7 @@ class MessageInput extends Component {
   };
   handleSend = (msg) => {
     console.log(this.state.message);
-    //send message
+
     this.props.addMessage({
       message: typeof msg != "object" ? msg : this.state.message,
       sender: this.props.user.name,
@@ -58,23 +59,19 @@ class MessageInput extends Component {
     const { openGallery } = this.state;
     return (
       <div
+        id="input-upper-container"
         style={{
           height: openGallery ? "30vh" : null,
-          width: "100%",
-          overflowY: openGallery ? "scroll" : "hidden",
 
-          scrollbarColor: "grey",
-          scrollbarWidth: "thin",
+          overflowY: openGallery ? "scroll" : "hidden",
         }}
       >
         <div
+          id="input-inner-container"
           style={{
-            width: "100%",
             backgroundColor: this.props.Dark_Mode
               ? Color_Theme
               : "rgba(233, 242, 246,0.9)",
-            display: "flex",
-            alignItems: "center",
           }}
         >
           {/*<div
@@ -94,7 +91,7 @@ class MessageInput extends Component {
             ])}
           >
             <InsertEmoticon
-              //fontSize="large"
+              
               style={combineStyles([
                 {
                   color: this.props.Dark_Mode ? "grey" : "#ffffff",
@@ -104,18 +101,15 @@ class MessageInput extends Component {
             />
           </div>*/}
           <Card
+            id="input-card"
             style={combineStyles([
               s.b1,
               s.m2,
               s.p2,
               {
-                borderRadius: 10,
-                width: "80%",
-                flex: 1,
                 backgroundColor: this.props.Dark_Mode
                   ? "rgba(59, 59, 61,0.4)"
                   : "#ffffff",
-                borderColor: "grey",
               },
             ])}
           >
@@ -123,15 +117,9 @@ class MessageInput extends Component {
               id="message"
               onChange={this.handleInput}
               style={{
-                height: "3vh",
-                width: "100%",
                 color: this.props.Dark_Mode
                   ? "rgb(211, 211, 211)"
                   : "rgb(80, 99, 107)",
-                backgroundColor: "transparent",
-                border: "solid black 0px",
-                outline: "none",
-                fontSize: "2.5vh",
               }}
               multiline={true}
             />
@@ -141,16 +129,12 @@ class MessageInput extends Component {
             onClick={() => {
               this.setState({ openGallery: !this.state.openGallery });
             }}
+            className="icon-container"
             style={combineStyles([
               {
                 backgroundColor: this.props.Dark_Mode
                   ? "transparent"
                   : "#61b7d5",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                borderRadius: 100,
-                padding: 5,
               },
 
               s.m2,
@@ -166,17 +150,13 @@ class MessageInput extends Component {
             />
           </div>
           <div
+            className="icon-container"
             onClick={this.handleSend}
             style={combineStyles([
               {
                 backgroundColor: this.props.Dark_Mode
                   ? "transparent"
                   : "#61b7d5",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                borderRadius: 100,
-                padding: 5,
               },
 
               s.m2,
@@ -194,15 +174,11 @@ class MessageInput extends Component {
         </div>
         {openGallery && (
           <div
-            id="messageList"
+            id="gallery-container"
             style={{
-              height: "100%",
-              flex: 1,
-              justifyContent: "center",
               backgroundColor: this.props.Dark_Mode
                 ? Color_Theme
                 : "rgba(233, 242, 246,0.9)",
-              width: "100%",
             }}
           >
             {this.getImages()}

@@ -1,0 +1,42 @@
+#input-upper-container {
+  width: 100%;
+  scrollbar-color: grey;
+  scrollbar-width: thin;
+}
+
+#input-inner-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#input-card {
+  border-radius: 10px;
+  width: 80%;
+  flex: 1;
+  border-color: grey;
+}
+
+#message {
+  height: 3vh;
+  width: 100%;
+  background-color: transparent;
+  border: solid black 0px;
+  outline: none;
+  font-size: 2.5vh;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  padding: 5px;
+}
+
+#gallery-container {
+  height: 100%;
+  flex: 1;
+  justify-content: center;
+  width: 100%;
+}

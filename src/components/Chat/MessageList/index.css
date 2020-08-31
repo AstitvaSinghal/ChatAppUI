@@ -1,0 +1,19 @@
+#messageList {
+  flex: 1;
+  overflow-y: scroll;
+  scrollbar-color: grey;
+  scrollbar-width: thin;
+  width: 100%;
+}
+
+#message-container {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#message-paper {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 2.3vh;
+}

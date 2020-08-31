@@ -1,0 +1,111 @@
+#upper-container {
+  width: 25%;
+  height: 100%;
+  overflow: scroll;
+  scrollbar-width: thin;
+  overflow-x: hidden;
+}
+
+#header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid 0.1px;
+}
+
+#upper-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#image {
+  width: 7vh;
+  height: 7vh;
+  max-height: 50px;
+  max-width: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#icon-container {
+  flex: 1;
+  justify-content: flex-end;
+  display: flex;
+  margin-right: 10px;
+}
+
+#search-container {
+  height: 2vh;
+  border-radius: 10px;
+  width: 80%;
+
+  display: flex;
+  align-items: centers;
+}
+
+#search-input {
+  height: 2vh;
+  width: 100%;
+
+  background-color: transparent;
+  border: none;
+  font-size: 2.5vh;
+  outline: none;
+}
+
+#contact-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: solid 0.1px;
+}
+
+#contact-image {
+  width: 75%;
+  height: 75%;
+  max-height: 75px;
+  max-width: 75px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#text-upper-container {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-name {
+  flex: 1;
+  color: rgb(230, 230, 230);
+  font-size: 2.2vh;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+#last-message {
+  flex: 1;
+
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 2vh;
+}
+#unread-message {
+  align-self: flex-end;
+  margin: 10px;
+  margin-left: auto;
+  color: white;
+
+  padding: 5px;
+  border-radius: 100px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
